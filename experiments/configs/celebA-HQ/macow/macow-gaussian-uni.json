@@ -1,0 +1,40 @@
+{
+  "generator": {
+    "flow": {
+      "type": "macow",
+      "levels": 7,
+      "num_steps": [2, [10, 10], [8, 8], [8, 8], [4, 4], [1, 1], 1],
+      "factors": [4, 4, 4, 4, 4],
+      "in_channels": 3,
+      "hidden_channels": [24, 256, 256, 256, 256, 256, 512],
+      "kernel_size": [2, 3],
+      "h_channels": 256,
+      "h_type": "global_linear",
+      "activation": "elu",
+      "inverse": true,
+      "transform": "affine",
+      "prior_transform": "affine",
+      "coupling_type": "conv",
+      "num_groups": [2, 4, 4, 4, 4, 4, 4]
+    }
+  },
+  "discriminator" : {
+    "type": "gaussian",
+    "encoder": {
+      "type": "global_resnet_bn",
+      "levels": 6,
+      "in_planes": 3,
+      "hidden_planes": [48, 96, 96, 192, 192, 256],
+      "out_planes": 32,
+      "activation": "elu"
+    },
+    "in_dim": 512,
+    "dim": 256,
+    "prior": {
+      "type": "normal"
+    }
+  },
+  "dequantizer": {
+    "type": "uniform"
+  }
+}
