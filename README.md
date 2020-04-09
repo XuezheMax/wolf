@@ -1,6 +1,10 @@
-# Wolf: An open source library for Invertible Generative (Normalizing) Flows
+<div align="center">
+   <img src="./docs/_static/imgages/wolf.png"><br><br>
+</div>
 
-**Wolf** is a tookit for invertible generative (normalizing) flows.
+-----------------------------------------------
+
+**Wolf** is an open source library for Invertible Generative (Normalizing) Flows.
 
 This is the code we used in the following papers
 
