@@ -8,7 +8,7 @@
 
 This is the code we used in the following papers
 
->[Decoupling Global and Local Representations from/for Image Generation]
+>[Decoupling Global and Local Representations from/for Image Generation](https://vixra.org/abs/2004.0222)
 
 >Xuezhe Ma, Xiang Kong, Shanghang Zhang and Eduard Hovy
 
