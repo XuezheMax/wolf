@@ -45,8 +45,8 @@ cd experiments
 ```
 Training a new CIFAR-10 model:
 ```base
-python -u train.py \
-    --config  configs/cifar10/glow-gaussian-uni.json \
+python -u train.py --dataset cifar10 \
+    --config  configs/cifar10/glow/glow-gaussian-uni.json \
     --epochs 15000 --valid_epochs 10
     --batch_size 512 --batch_steps 2 --eval_batch_size 1000 --init_batch_size 2048 \
     --lr 0.001 --beta1 0.9 --beta2 0.999 --eps 1e-8 --warmup_steps 50 --weight_decay 1e-6 --grad_clip 0 \

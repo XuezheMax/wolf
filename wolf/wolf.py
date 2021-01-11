@@ -6,7 +6,6 @@ from typing import Dict, Tuple
 import torch
 import torch.nn as nn
 import torch.distributed as dist
-from apex.parallel import DistributedDataParallel, convert_syncbn_model
 
 from wolf.data.image import preprocess, postprocess
 from wolf.modules import DeQuantizer
@@ -124,6 +123,9 @@ class WolfModel(nn.Module):
         core.init(x, y=y, init_scale=init_scale)
 
     def init_distributed(self, rank, local_rank):
+
+        from apex.parallel import DistributedDataParallel, convert_syncbn_model
+        
         assert not self.distribured_enabled
         self.distribured_enabled = True
         print("Initializing Distributed, rank {}, local rank {}".format(rank, local_rank))
