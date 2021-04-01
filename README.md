@@ -8,9 +8,11 @@
 
 This is the code we used in the following papers
 
->[Decoupling Global and Local Representations from/for Image Generation](https://vixra.org/abs/2004.0222)
+>[Decoupling Global and Local Representations via Invertible Generative Flows](https://vixra.org/abs/2004.0222)
 
 >Xuezhe Ma, Xiang Kong, Shanghang Zhang and Eduard Hovy
+
+>ICLR 2021
 
 >[MaCow: Masked Convolutional Generative Flow](https://arxiv.org/abs/1902.04208)
 
@@ -66,6 +68,14 @@ We also implement the MaCow model with distributed training supported. To train 
 
 ## References
 ```
+@InProceedings{decoupling2021,
+    title = {Decoupling Global and Local Representations via Invertible Generative Flows},
+    author = {Ma, Xuezhe and Kong, Xiang and Zhang, Shanghang and Hovy, Eduard},
+    booktitle = {Proceedings of the 9th International Conference on Learning Representations (ICLR-2021)},
+    year = {2021},
+    month = {May},
+}
+
 @incollection{macow2019,
     title = {MaCow: Masked Convolutional Generative Flow},
     author = {Ma, Xuezhe and Kong, Xiang and Zhang, Shanghang and Hovy, Eduard},
